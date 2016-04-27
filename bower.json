@@ -1,0 +1,24 @@
+{
+  "name": "comicnpm",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "lqc"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^2.2.3",
+    "fullpage.js": "fullpage#^2.7.9",
+    "jquery-easing": "*"
+  }
+}
