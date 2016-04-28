@@ -4,7 +4,9 @@ $(function () {
 		anchors: ['page1', 'page2', 'page3', 'page4'],
 		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['优秀四月新番总览表', '在下版本，有何贵干？', '甲铁城的卡巴内瑞', '12岁。']
+		navigationTooltips: ['优秀四月新番总览表', '在下版本，有何贵干？', '甲铁城的卡巴内瑞', '12岁。'],
+		verticalCentered: false,
+		scrollBar: true
 
 		// events
 	});
