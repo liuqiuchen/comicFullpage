@@ -41,7 +41,7 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     color: #0379e8;
-    margin: 10% auto 0 auto;
+    margin: 0 auto;
     width: 1200px;
     height: 260px;
 }
@@ -49,6 +49,8 @@ body {
 #fullpage .section1 ul li {
     float: left;
     width: 400px;
+    margin-top: 35%;
+    opacity: 0;
 }
 
 /*
@@ -95,7 +97,8 @@ body {
 }
 
 #fullpage .section2 h1 {
-    font-size: 3.4rem;
+    font-size: 1.4rem;
+    opacity: 0;
     color: #333;
     font-weight: normal;
     text-align: center;
@@ -110,8 +113,9 @@ body {
 
 #fullpage .section2 .content_text {
     float: left;
-    margin: 8% 300px 0 0;
+    margin: 8% 300px 0 -400px;
     width: 500px;
+    opacity: 0;
 }
 
 #fullpage .section2 .content_text p {
@@ -122,7 +126,7 @@ body {
 }
 
 #fullpage .section2 .content_bill {
-    float: left;
+    float: right;
     width: 400px;
     height: 543px;
     background: url("../img/banben.png") no-repeat center center;
@@ -132,7 +136,8 @@ body {
                     -5px -5px 20px #cccccc;
     box-shadow: 5px 5px 20px #cccccc,
                 -5px -5px 20px #cccccc;
-    margin: 0 0 0 0;
+    margin-top: 400px;
+    opacity: 0;
 }
 
 #fullpage .section3 h1 {
