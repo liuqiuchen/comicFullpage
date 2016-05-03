@@ -20,12 +20,23 @@ $(function () {
 					move('.section1 .section1_item3').set('opacity', '1').set('margin-top', '15%').duration('.5s').end();
 					break;
 				case 2:
-					move('.section2 h1').set('opacity', '1').set('font-size', '3.4rem').duration('.3s').end(function () {
-						move('.section2 .content_text').set('opacity', '1').set('margin-left', '0').duration('.5s').end();
-						move('.section2 .content_bill').set('opacity', '1').set('margin-top', '0').duration('.5s').end();
+					move('.section2 h1').set('opacity', '1').set('font-size', '3.4rem').duration('.5s').end(function () {
+						move('.section2 .content_text').set('opacity', '1').set('left', '0').duration('.5s').end();
+						move('.section2 .content_bill').set('opacity', '1').set('top', '0').duration('.5s').end();
 					});
 					break;
-
+				case 3:
+					move('.section3 h1').set('opacity', '1').set('margin-left', '0').duration('.5s').end(function () {
+						move('.section3 .content_bill').set('opacity', '1').set('top', '0').duration('.5s').end();
+						move('.section3 .content_text').set('opacity', '1').set('right', '0').duration('.5s').end();
+					});
+					break;
+				case 4:
+					move('.section4 .content_l .content_bill').set('opacity', '1').duration('2s').end();
+					move('.section4 .content_r .content_bill').set('opacity', '1').duration('2s').end();
+					move('.section4 .content_l .content_text').set('opacity', '1').set('top', '0').duration('.5s').end();
+					move('.section4 .content_r .content_text').set('opacity', '1').set('bottom', '0').duration('.5s').end();
+					break;
 			}
 		},
 		onLeave: function (index, nextIndex, direction) {
@@ -58,16 +69,48 @@ $(function () {
 					});
 					_section2.find('.content_text').css({
 						'opacity': 0,
-						'margin-left': '-400px'
+						'left': '-400px'
 					});
 					_section2.find('.content_bill').css({
 						'opacity': 0,
-						'margin-top': '400px'
+						'top': '400px'
 					});
 					break;
+				case 3:
+					_section3.find('h1').css({
+						'opacity': 0,
+						'margin-left': '-400px'
+					});
+					_section3.find('.content_bill').css({
+						'opacity': 0,
+						'top': '400px'
+					});
+					_section3.find('.content_text').css({
+						'opacity': 0,
+						'right': '-400px'
+					});
+					break;
+				case 4:
+					_section4.find('.content_l .content_bill').css({
+						'opacity': 0
+					});
+					_section4.find('.content_r .content_bill').css({
+						'opacity': 0
+					});
+					_section4.find('.content_l .content_text').css({
+						'opacity': 0,
+						'top': '400px'
+					});
+					_section4.find('.content_r .content_text').css({
+						'opacity': 0,
+						'bottom': '400px'
+					});
 			}
 		}
 	});
+
+	//隐藏底部滚动条
+	$('html').eq(0).css('overflow-x', 'hidden');
 
 });
 

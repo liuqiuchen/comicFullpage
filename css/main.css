@@ -113,9 +113,11 @@ body {
 
 #fullpage .section2 .content_text {
     float: left;
-    margin: 8% 300px 0 -400px;
     width: 500px;
     opacity: 0;
+    margin-top: 8%;
+    position: relative;
+    left: -400px;
 }
 
 #fullpage .section2 .content_text p {
@@ -136,8 +138,9 @@ body {
                     -5px -5px 20px #cccccc;
     box-shadow: 5px 5px 20px #cccccc,
                 -5px -5px 20px #cccccc;
-    margin-top: 400px;
     opacity: 0;
+    position: relative;
+    top: 400px;
 }
 
 #fullpage .section3 h1 {
@@ -145,13 +148,15 @@ body {
     font-weight: normal;
     font-size: 3.0rem;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 6%;
+    margin-left: -400px;
+    opacity: 0;
 }
 
 #fullpage .section3 .content {
     width: 1200px;
     height: auto;
-    margin: 8% auto auto auto;
+    margin: 9% auto auto auto;
 }
 
 #fullpage .section3 .content p {
@@ -173,12 +178,18 @@ body {
                     -5px -5px 20px #ff6161;
     box-shadow: 5px 5px 20px #ff6161,
                 -5px -5px 20px #ff6161;
+    position: relative;
+    top: 400px;
+    opacity: 0;
 }
 
 #fullpage .section3 .content_text {
     float: left;
     width: 500px;
     margin: 3% 0 0 0;
+    position: relative;
+    right: -400px;
+    opacity: 0;
 }
 
 #fullpage .section4 h1 {
@@ -206,10 +217,16 @@ body {
 
 #fullpage .section4 .content_l .content_text {
     margin-top: 40px;
+    position: relative;
+    top: 400px;
+    opacity: 0;
 }
 
 #fullpage .section4 .content_r .content_text {
     margin-bottom: 40px;
+    position: relative;
+    bottom: 400px;
+    opacity: 0;
 }
 
 #fullpage .section4 .content_l,
@@ -225,10 +242,12 @@ body {
 
 #fullpage .section4 .content_l .content_bill {
     background: url("../img/cj.png") no-repeat center center;
+    opacity: 0;
 }
 
 #fullpage .section4 .content_r .content_bill {
     background: url("../img/hr.png") no-repeat center center;
+    opacity: 0;
 }
 
 #fullpage .section4 .content h2 {
